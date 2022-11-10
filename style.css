@@ -1,0 +1,383 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+li{
+  list-style: none;
+}
+/* Header css Start */
+
+.header-content{
+  background-image: url("./images/images.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.header-content h2{
+  font-size: 4vmin;
+  color: whitesmoke;
+  padding-top: 30px;
+  padding-bottom: 7px;
+}
+.line{
+  background-color: #fc036b;
+  height: 5px;
+  width: 10%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.header-content h2{
+  font-size: 4vmin;
+  color: whitesmoke;
+  padding-top: 10%;
+  padding-bottom: 7px;
+  }
+.header-content h1{
+  font-size: 7vmin;
+  color: whitesmoke;
+  padding-top: 2.5vmin;
+  letter-spacing: 1px;
+  padding-bottom: 7px;  
+} 
+.btn{
+  padding: 1.5vmin 3vmin;  
+  border-radius: 20px;
+  color: whitesmoke;
+  background-color: #fc036b;
+  border: none;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 2vmin;
+}
+.btn span:after {
+  content: '\00bb';
+  margin-left: 5px;
+  opacity: 0;
+  font-size: 17px;
+  transition: 0.5s;
+  }
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+.btn:hover{
+  color: #fc036b;
+  font-weight: 600;
+  background-color: whitesmoke;
+}
+
+/* Header css End */
+
+/* Navbar css Start */
+.navbar{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content:space-between ;
+  padding: 2vmin 5vmin;
+}
+.nav-links ul{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.nav-links li{
+  margin: 0vmin 3vmin;
+  color: whitesmoke;
+}
+.contact-btn{
+  padding: 1.5vmin 3vmin;  
+  border-radius: 20px;
+  color: whitesmoke;
+  background-color: #fc036b;
+  border: none;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+}
+.logo{
+  font-size: 4vmin;
+  color: whitesmoke;
+}
+.menu-img{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 6vmin;
+    cursor: pointer;
+    display: none;
+}
+/* Navbar css End */
+
+/* Upcoming Events  CSS Start*/
+.upcoming-section{
+width: 85vw;
+margin: auto;
+}
+.upcoming-section .line{
+  margin: auto;
+  margin-bottom: 5vmin;
+}
+.upcoming{
+  text-align: center;
+  margin-top: 10vmin;
+  padding-bottom: 5px;
+  color: rgb(68, 63, 63);
+  font-size: 6vmin;
+}
+.row{
+  display: flex;
+}
+.col{
+  text-align: center;
+  margin: 8vmin 0;
+}
+.col h2{
+  color: rgb(85, 78, 78);
+  margin: 2vmin 0;
+}
+.col p{
+  padding: 0 6vmin;
+}
+.col .btn{
+  margin-top: 4vmin;
+}
+.upcoming-img{
+  width: 500px;
+  border-radius: 5px;
+}
+
+/* Upcoming Events  CSS End*/
+/* Explore the World  CSS Start*/
+.explore-section{
+  background-image: url("./images/explore.jpg");
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.explore-div{
+  width: 37%;
+  text-align: center;
+  margin: 0 20vmin;
+}
+.explore-div h1{
+  font-size:6vmin;
+  color: whitesmoke;
+  padding: 5px 0px;
+}
+.explore-div p{
+  font-size:2.3vmin;
+  line-height: 25px;
+  color: whitesmoke;
+  padding-top: 5vmin;
+  padding-top: 5vmin;
+  padding-bottom: 3vmin;
+  text-align: start;
+}
+.explore-div .line{
+  width: 20vmin;
+  margin: auto;
+}
+/* Explore the World  CSS End*/
+
+/* Tour CSS Start" */
+.tour{
+  height: 27vh;
+  margin: 2px;
+  border-radius: 5px;
+  width: 20vw;
+}
+.tour-section{
+  width: 90%;
+  text-align: center;
+  margin: 10vmin auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tour-col1{
+  width: 50%;
+}
+.tour-col1 h1{
+  text-align: start;
+  padding-bottom: 5px;
+  color: rgb(68, 63, 63);
+  font-size: 6vmin;
+}
+.tour-col1 p{
+  font-size:2.4vmin;
+  line-height: 20px;
+  color: rgb(102, 97, 97);
+  padding-top: 2vmin;
+  padding-bottom: 3vmin;
+  text-align: start;
+}
+.tour-col1 .line{
+  width: 20%;
+}
+/* Tour CSS End" */
+
+/*Footer Section Start*/
+.footer{
+ background-color: rgb(59, 58, 58);
+ text-align: center;
+ color: whitesmoke;
+ padding: 7vmin 0;
+}
+.footer p{
+  padding: 5px 0;
+  cursor: pointer;
+}
+/*Footer Section End/
+
+/* Mobile Devices */
+@media only screen and (max-width: 580px) {
+  .upcoming-img{
+    width: 80%;
+    border-radius: 5px;
+  }
+  .footer p{
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .explore-div{
+    width: 90%;
+  }
+  .tour-section{
+    flex-direction: column;
+  }
+  .tour-section .tour-col1{
+    width: 100%;
+  }
+  .tour-col1 .btn{
+    margin-bottom: 30px;
+  }
+  .tour-col1 p {
+    line-height: 15px !important;
+}
+}
+@media only screen and (max-width: 920px) {
+  .menu-img{
+    height: 6vmin;
+    cursor: pointer;
+  }
+  .explore-div{
+    width: 100%;
+    text-align: center;
+    margin: 0 20vmin;
+  }
+  .tour-section .tour-col1{
+    width: 90%;
+    margin: auto;
+  }
+  .tour-section {
+    text-align: center;
+  }
+  .img-div1 .img-div2{
+    display: flex;
+    flex-direction: column;
+  }
+  .tour{
+    width: 80%;
+    height: 30%;
+    margin: 20px 0px;
+  }
+  .upcoming-img{
+    width: 80%;
+    border-radius: 5px;
+  }
+  .tour-col1 .btn{
+    margin-bottom: 50px;
+  }
+
+  .col p{
+    padding: 0 8vmin;
+  }
+  .menu-img{
+    display: block;
+  }
+  .nav-links{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+  background-color: rgb(59, 58, 58);
+  border-bottom-right-radius: 50%;
+    display: none;
+  }
+  .show{
+   display: block;
+  }
+  .nav-links li{
+    margin: 30px auto;
+    font-size: 4vmin;
+  }
+  .nav-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .explore-section {
+  justify-content: center;
+  
+}
+  .explore-div h1{
+    font-size: 3.5vmin;
+    line-height: 130%;
+  }
+  .explore-div .line{
+    width: 15%;
+  }
+  .tour-section{
+    flex-direction: column;
+  }
+  .tour-col1 p {
+    line-height: 30px;
+}
+  
+}
+@media (min-width: 920px) and (max-width:1300px) {
+  .upcoming-img{
+    width: 80%;
+    border-radius: 5px;
+  }
+  .upcoming-section{
+    width: 90vw;
+    margin: auto;
+    }
+ .explore-div h1{
+    font-size:4vmin;
+  }
+  .tour-col1 h1 {
+    font-size: 5vmin;
+}
+.tour-col1 p {
+  line-height: 140%;
+}
+.tour {
+  height: 23vh;
+}
+}
