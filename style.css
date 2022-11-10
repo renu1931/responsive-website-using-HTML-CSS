@@ -6,6 +6,10 @@ box-sizing: border-box;
 body{
   overflow-x: hidden;
 }
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
 li{
   list-style: none;
 }
@@ -90,6 +94,7 @@ li{
   display: flex;
   align-items: center;
   justify-content: end;
+  cursor: pointer;
 }
 .nav-links li{
   margin: 0vmin 3vmin;
